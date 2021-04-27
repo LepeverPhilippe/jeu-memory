@@ -51,6 +51,7 @@ Liste des ressources utilisé pour développer ce jeu :
 Liste les versions ici :
 * **Dernière version stable :** 1.0
 * **Dernière version :** 1.0
+
 Liste des versions : [Cliquer pour afficher](https://github.com/LepeverPhilippe/jeu-memory/tags)
 
 ## Auteurs
