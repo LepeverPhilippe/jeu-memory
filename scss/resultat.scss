@@ -1,0 +1,44 @@
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Style pour l'écran Resultat*/
+.resultats{
+    margin: 0px auto;
+    width: 90%;
+
+    .titre{
+        text-align: center;
+        font-weight: bold;
+    }
+    .classement .row{
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+
+        &.chargement{
+            text-align: center;  
+        }
+        .col{
+            flex: 1 0 0%;
+            background-color: #f8f9fa;
+            border: 1px solid #ffffff;
+            padding: 10px;
+        }
+    }
+}
+
+button.demarrer {
+    padding: 10px 100px;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+
+    &:hover{
+        border: 1px solid #000000;
+        background-color: #00b04c;
+    }
+}

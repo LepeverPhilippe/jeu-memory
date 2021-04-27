@@ -1,0 +1,20 @@
+{
+    "name": "lepever/memory",
+    "description": "Jeu Memory : Test technique pour l'admission en tant que formateur-développeur pour l'école O'clock qui est super génial...",
+    "authors": [
+        {
+            "name": "Lepever Philippe",
+            "email": "philippe@phimi.consulting"
+        }
+    ],
+    
+    "autoload": {
+        "psr-4": {
+            "Memory\\": "Class/"
+        }
+    },
+
+    "require": {
+        "php": "7.3.0"
+    }
+}

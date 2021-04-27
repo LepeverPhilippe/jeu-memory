@@ -1,0 +1,24 @@
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Style pour la banniere et le message */
+.banniere{
+    display: none;
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    font-size: x-large;
+    
+    .message{
+        &.gagnant {
+            color:#00b04c;
+        }
+        &.perdant {
+            color:#ea342d;
+        }
+    }
+}

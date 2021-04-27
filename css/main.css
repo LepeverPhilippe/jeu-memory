@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Constantes pour définir les couleurs de border des cartes */
+:root {
+  --COULEUR_CARTE_NON_JOUE: #000000;
+  --COULEUR_CARTE_SELECT: #00b4eb;
+  --COULEUR_CARTE_VISBLE: #00b04c;
+  --COULEUR_CARTE_ERREUR: #ea342d;
+}
+
+/* Style pour les élements */
+.main {
+  margin: 0 auto;
+  width: 880px;
+  overflow: auto;
+  background-color: #dcdcdc;
+}
+.main .titreJeu {
+  background-color: #535353;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.main h1 {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Style pour la banniere et le message */
+.banniere {
+  display: none;
+  margin: 0px auto;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  font-size: x-large;
+}
+.banniere .message.gagnant {
+  color: #00b04c;
+}
+.banniere .message.perdant {
+  color: #ea342d;
+}
+
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Style pour l'écran Resultat*/
+.resultats {
+  margin: 0px auto;
+  width: 90%;
+}
+.resultats .titre {
+  text-align: center;
+  font-weight: bold;
+}
+.resultats .classement .row {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+.resultats .classement .row.chargement {
+  text-align: center;
+}
+.resultats .classement .row .col {
+  flex: 1 0 0%;
+  background-color: #f8f9fa;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+button.demarrer {
+  padding: 10px 100px;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+button.demarrer:hover {
+  border: 1px solid #000000;
+  background-color: #00b04c;
+}
+
+/*
+ * @author Philippe Lepever philippe@phimi.consulting
+ * 
+ * @since 1.0
+*/
+/* Style pour l'écran JEU */
+.jeu {
+  display: none;
+}
+
+.plateau {
+  margin: 0px auto;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #acacac;
+  width: 850px;
+}
+
+.carte {
+  background-color: #535353;
+  width: 100px;
+  height: 100px;
+  background-position-y: 0px;
+  margin: 5px;
+  border: 5px solid;
+}
+.carte.visible {
+  background-image: url("//static.oclock.io/challenges/tests-techniques/cards.png");
+}
+
+/* Style pour la partie Temps dans le Jeu */
+.temps {
+  margin: 25px;
+  height: 50px;
+}
+
+.barreTemps {
+  float: left;
+  border: 1px solid #000;
+  width: 79%;
+  margin-right: 5px;
+  background-color: #ffffff;
+}
+
+.sablier {
+  background-color: #00b04c;
+  width: 100%;
+  height: 50px;
+}
+
+.chrono {
+  font-size: xxx-large;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
