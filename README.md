@@ -1,7 +1,6 @@
 # Jeu Memory pour O'Clock
 _(Test technique pour l'admission en tant que formateur-développeur pour l'école O'clock qui est super génial...)_
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
 C'est le Jeu memory en HTML5 et CSS3 avec JQuery pour les interactions
 Il y a des appels Ajax pour :
@@ -50,8 +49,8 @@ Liste des ressources utilisé pour développer ce jeu :
 
 ## Versions
 Liste les versions ici :
-**Dernière version stable :** 1.0
-**Dernière version :** 1.0
+* **Dernière version stable :** 1.0
+* **Dernière version :** 1.0
 Liste des versions : [Cliquer pour afficher](https://github.com/LepeverPhilippe/jeu-memory/tags)
 
 ## Auteurs
@@ -63,5 +62,3 @@ Lisez la liste des [contributeurs](https://github.com/LepeverPhilippe/jeu-memory
 ## License
 
 Ce projet est sous licence ``GNU General Public License v3.0`` - voir le fichier [LICENSE](LICENSE) pour plus d'informations
-
-
