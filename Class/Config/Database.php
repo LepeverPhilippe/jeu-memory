@@ -10,11 +10,11 @@ use PDO;
  */
 
 class Database{
-    // specify your own database credentials
-    private $host = "db5002312708.hosting-data.io";
-    private $db_name = "dbs1861213";
-    private $username = "dbu1551850";
-    private $password = "UsXOZRKbQCM71iBmEDuD,";
+    // specify your own database credentials   
+    private $host = "host";
+    private $db_name = "db_name";
+    private $username = "username";
+    private $password = "password";
 
     // get the database connection
     private $dbConnection = null;
