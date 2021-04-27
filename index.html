@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>O'Clock - Jeu Memory</title>
+        <!-- Appel du style pour le jeu -->
+        <!-- <link rel="stylesheet" href="style/style.css"> -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Div pour center le jeu -->
+        <div class="main">
+            <!-- Div pour titre du jeu -->
+            <div class="titreJeu">
+                <h1>Jeu de mémoire</h1>
+            </div>
+            <!-- Div du message "Gagné", "Perdu" -->
+            <div class="banniere">
+                <h2 class="message"></h2>
+            </div>
+            <!-- ECRAN 1 : RESULTAT, Div pour les resultats -->
+            <div class="resultats">
+
+                <!-- Div pour le classement -->
+                <div class="classement">
+                    <div class="row titre">
+                        <div class="col">Classement du TOP 10 sur <span id="TotalParties">toutes les</span> parties jouées</div>
+                    </div>
+
+                    <div class="row titre">
+                        <div class="col">Position</div>
+                        <div class="col">Date</div>
+                        <div class="col">Temps</div>
+                        <div class="col">Score</div>
+                    </div>
+                    <!-- Div pour l'image du chargement -->
+                    <div class="row chargement">
+                        <div class="col">
+                            <img src="images/loader.gif" alt="chargement"/>
+                            <br />Chargement en cours...
+                        </div>
+                    </div>
+                </div>
+                <button class="demarrer">Démarrer</button>
+            </div>
+            <!-- ECRAN 2 : JEU, Div pour les resultats -->
+            <div class="jeu">
+                <!-- div plateau qui contient les cartes à jouer -->
+                <div class="plateau"></div>
+                <!-- div qui afficher le chrono et la barre de temps -->
+                <div class="temps">
+                    <div class="chrono">00:00</div>
+                    <div class="barreTemps">
+                        <div class="sablier"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appel des scripts -->
+        <!-- Appel de JQuery -->
+        <script src="script/jquery-3.6.0.min.js"></script>
+        <!-- Appel de JQuery Animate Colors pour la gestion des animations de couleurs des borders -->
+        <script src="script/jquery.animate-colors-min.js"></script>
+        <!-- Appel de script pour le jeu -->
+        <script src="script/script.js"></script>
+    </body>
+</html>

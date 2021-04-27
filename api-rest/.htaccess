@@ -1,0 +1,18 @@
+# BEGIN API ROUTE
+
+# Encodage par défaut des fichiers textes et HTML
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /api-rest
+RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{THE_REQUEST} ^.*/
+RewriteRule ^([a-z]*)/?([0-9]*):?(.*)$ /api-rest/index.php?resource=$1&id=$2&option=$3 [L,QSA] [R=301,L] 
+
+</IfModule>
+# END API ROUTE
+
