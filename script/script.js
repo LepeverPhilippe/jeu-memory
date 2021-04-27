@@ -177,11 +177,11 @@ $(document).ready(function () {
      * Fonction qui envoyer le score via un appel ajax au serveur
      * pour stocker ce résultat
      * 
-     * puis, affiche le classement de cette partie dans le div bannier
+     * puis, affiche le classement de cette partie dans le div banniere
      * et actualise le total des parties jouées et le classement
      * 
      * Si il y a une erreur dans l'appel ajax, mettre un message 
-     * d'erreur dans le div bannier par rapport au classement
+     * d'erreur dans le div banniere par rapport au classement
      * 
      * @returns null
      */
@@ -214,7 +214,7 @@ $(document).ready(function () {
                 //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
                 //On peut afficher les informations relatives à la requête et à l'erreur
                 .fail(function (error) {
-                    // Mettre le message d'erreur dans la bannier
+                    // Mettre le message d'erreur dans la banniere
                     $(".message").append("Vote partie n'a pas pu être enregistré... Désolé !");
 
                 })
@@ -365,7 +365,7 @@ $(document).ready(function () {
         EnvoyerScore();
         $(".resultats").show();
         $(".classement .chargement").show();
-        $("div.bannier").show();
+        $("div.banniere").show();
         $("div.jeu").hide();
     }
 
@@ -473,10 +473,10 @@ $(document).ready(function () {
         // Mettre le chrono à 0
         $(".chrono").html("00:00");
 
-        // Cacher les div de présentation (classement et resultat et bannier)
+        // Cacher les div de présentation (classement et resultat et banniere)
         $(".classement .chargement").hide();
         $("div.resultats").hide();
-        $("div.bannier").hide();
+        $("div.banniere").hide();
         // Enlever les class de fin de partie du message
         $(".message").removeClass("win lose");
 
