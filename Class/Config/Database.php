@@ -1,6 +1,7 @@
 <?php
-namespace Memory;
-use PDO;
+namespace Memory\Config;
+
+use \PDO;
 
 /**
  * Description of database
